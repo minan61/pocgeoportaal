@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { GisComponent } from './gis/gis.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GisComponent
   ],
   imports: [
     BrowserModule

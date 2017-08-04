@@ -1,0 +1,28 @@
+﻿
+<div>
+  <h3 class="text-center">
+    gis works!
+  </h3>
+
+
+  <div class="col-md-12 btn-group">
+
+    <button *ngIf="inDrawMode" (click)="setType()" class="btn btn-danger">STOP Drawing</button>
+    <button (click)="setType('Polygon')" class="btn btn-primary">Polygon</button>
+    <button (click)="setType('BufferZone')" class="btn btn-primary">Bufferzone</button>
+    <button (click)="setType('Modify')" class="btn btn-primary">Modify</button>
+    <button (click)="setType('MeasureLength')" class="btn btn-primary">Measure Length</button>
+    <button (click)="setType('MeasureArea')" class="btn btn-primary">Measure Area</button>
+    <button (click)="setType('Delete')" class="btn btn-primary">Delete</button>
+  </div>
+  <div class="col-md-9 panel panel-primary">
+    <div class="map" id="map"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="col-md-3">
+      <h4>Output</h4>
+      <!--<p>{{selectedType}}</p>-->
+      <p>{{output}}</p>
+    </div>
+  </div>
+</div>
